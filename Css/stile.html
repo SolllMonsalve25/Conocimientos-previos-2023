@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOJAS DE ESTILO EN CASCADA</title>
+</head>
+<body>
+    <h1><center>HOJAS DE ESTILO EN CASCADA</center></h1><br> <br>
+    
+    <div>
+        <p>Las hojas de estilos en cascada (CSS) son un conjunto de reglas de formato que determinan
+        el aspecto del contenido de una página web. La utilización de estilos CSS para aplicar formato 
+        a una página permite separar el contenido de la presentación. El contenido de la página (el código HTML) 
+        reside en el archivo HTML, mientras que las reglas CSS que definen la presentación del código residen en 
+        otro archivo (una hoja de estilos externa) o en otra parte del documento HTML (normalmente, en la sección 
+        head). La separación del contenido y la presentación hace que resulte mucho más fácil mantener el aspecto 
+        del sitio desde una ubicación central, ya que no es necesario actualizar las propiedades de las distintas 
+        páginas cuando se desea realizar algún cambio. La separación del contenido y la presentación también depura y 
+        simplifica el código HTML, lo que disminuye el tiempo de carga en los navegadores y agiliza la navegación para 
+        personas con problemas de accesibilidad (por ejemplo, para los usuarios que utilicen lectores de pantalla).</p>
+    </div>
+
+    <h3>Por qué se llaman estilos en cascada</h3>
+    <p>Las hojas de estilo se llaman hojas de estilo "en cascada" porque:</p>
+    <ul>
+        <li>Las propiedades de estilo pueden estar escritas en varios sitios (en varios lugares de la página web o de la hoja de estilo) y dependiendo del sitio, afectan a más o menos elementos.</li>
+        <li> Cuando un elemento está contenido en otro (por ejemplo, un párrafo <span class="html-eti">&lt;p&gt;</span> dentro de una división <span class="html-eti">&lt;div&gt;</span>), al elemento de dentro se le aplican también las propiedades definidas para el elemento de fuera (al párrafo <span class="html-eti">&lt;p&gt;</span> se le aplicarían las propiedades definidas para la división <span class="html-eti">&lt;div&gt;</span>).</li>
+        <li>Dos reglas distintas pueden ser de aplicación a un mismo elemento (por ejemplo, a un párrafo <span class="html-eti">&lt;p&gt;</span> con clase <span class="html-atri-valor">nombre</span>, le es de aplicación tanto el selector <span class="css-sele">.nombre</span> como el selector <span class="css-sele">p</span>).</li>
+    </ul>
+    <div>
+        <h3>Pseudo clases</h3>
+        <p>
+            Las pseudoclases en CSS son palabras clave que se añaden a los selectores para especificar un estado especial del elemento seleccionado. Estos estados pueden ser interacciones del usuario, como cuando el usuario pasa el ratón por encima de un elemento, hace clic en él, o incluso cuando un elemento tiene un estado específico como estar activo o seleccionado. Las pseudoclases permiten aplicar estilos a estos estados específicos.
+        </p>
+
+        <ul>
+            <li><strong>hover: </strong>Selecciona un elemento cuando el usuario pasa el ratón por encima de él.</li>
+            <li><strong>active: </strong>Selecciona un elemento mientras está siendo activado por el usuario, como </li>
+            <li><strong>focus: </strong>Selecciona un elemento mientras tiene el foco de entrada, como cuando se selecciona mediante el teclado o se hace clic en él para escribir.</li>
+            <li><strong>visited: </strong>Selecciona un enlace que ha sido visitado por el usuario.</li>
+            <li><strong>first-child: </strong>Selecciona el primer hijo de un elemento.</li>
+            <li><strong>last-child: </strong>Selecciona el último hijo de un elemento.</li>
+            <li><strong>nth-child(n): </strong>Selecciona el enésimo hijo de un elemento, donde "n" es un número o una fórmula matemática.</li>
+            <li><strong>nth-of-type(n): </strong>Selecciona el enésimo hijo de un tipo específico de elemento.</li>
+            <li><strong>nth-last-child(n): </strong>Selecciona el enésimo hijo, comenzando desde el último hijo.</li>
+            <li><strong>nth-last-of-type(n): </strong>Selecciona el enésimo hijo de un tipo específico de elemento, comenzando desde el último hijo.</li>
+            <li><strong>not(selector): </strong>Selecciona elementos que no coinciden con el selector especificado.</li>
+            <li><strong>checked: </strong>Selecciona elementos de formulario, como casillas de verificación o botones de radio, que están marcados o seleccionados.</li>
+            <li><strong>disabled: </strong>Selecciona elementos de formulario que están deshabilitados.</li>
+            <li><strong>enabled: </strong>Selecciona elementos de formulario que están habilitados.</li>
+            <li><strong>empty: </strong>Selecciona elementos que no tienen hijos.</li>
+            <li><strong>required: </strong>Selecciona elementos de formulario que tienen el atributo "required" especificado.</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>Unidades de medida relativas</h3>
+        <p>
+            Las unidades de medida relativas en CSS son unidades que se calculan en relación con otros valores, como el tamaño de la fuente del elemento padre, el ancho del contenedor o la altura de la ventana del navegador. Estas unidades permiten diseñar diseños web de manera más flexible y adaptable, ya que se ajustan automáticamente en función del contexto en el que se utilizan.
+        </p>
+
+        <ul>
+            <li><strong>em: </strong>Esta unidad se basa en el tamaño de la fuente del elemento actual. Por ejemplo, si el tamaño de fuente del elemento actual es 16px, 1em sería equivalente a 16px. Si se aplica a un elemento secundario, su tamaño se calculará en relación con el tamaño de fuente de su elemento padre.</li>
+            <li><strong>rem: </strong>Similar a em, pero se basa en el tamaño de la fuente del elemento raíz (normalmente el elemento <html>). Esto lo hace más predecible y fácil de manejar en comparación con em, ya que no depende de la cadena de elementos contenedores.</li>
+            <li><strong>%: </strong>Esta unidad se basa en el tamaño del elemento padre. Por ejemplo, si se establece el ancho de un elemento hijo en un 50%, su ancho será la mitad del ancho de su elemento padre.</li>
+            <li><strong>vw (viewport width): </strong>Esta unidad se basa en el ancho de la ventana del navegador. 1vw es igual al 1% del ancho de la ventana del navegador.</li>
+            <li><strong>vh (viewport height): </strong>Similar a vw, pero se basa en la altura de la ventana del navegador.</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3> Fondos y bordes</h3>
+        <p>
+            En CSS3, los fondos y los bordes son propiedades que permiten agregar estilos visuales a los elementos HTML, como divs, párrafos, encabezados y más. Estas propiedades son fundamentales para diseñar y dar estilo a las interfaces de usuario web. Aquí te explico más sobre ellos:
+        </p>
+
+        <ul>
+            <li><strong>border: </strong>Define un borde alrededor del elemento. Puede especificar ancho, estilo y color del borde en una sola propiedad.</li>
+            <li><strong>border-width: </strong>Define el ancho del borde.</li>
+            <li><strong>border-style: </strong>Define el estilo del borde (por ejemplo, sólido, punteado, etc.).</li>
+            <li><strong>border-color: </strong>Define el color del borde.</li>
+            <li><strong>border-radius: </strong>Define el radio de la esquina del borde, creando esquinas redondeadas.</li>
+        </ul>
+    </div>
+
+    <a href="Conocimientos-previos-2023/index.html">VOLVER</a>
+
+
+
+
+
+</body>
+</html>

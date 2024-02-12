@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tematicas de Javascript</title>
+</head>
+<body>
+    
+    <h3><center>Tematicas de Javascript</center></h3>
+    
+    <h3>QUE ES JAVASCRIPT</h3> 
+    <p> es un robusto lenguaje de programación que se puede aplicar a
+     un documento HTML y utilizar para crear interactividad dinámica en 
+     los sitios web. Fue inventado por Brendan Eich, cofundador del proyecto 
+     Mozilla, Mozilla Foundation y la Corporación Mozilla.<br><br>
+     JavaScript por sí solo es bastante compacto aunque muy flexible, y los 
+     desarrolladores han escrito gran cantidad de herramientas encima del núcleo 
+     del lenguaje JavaScript, desbloqueando una gran cantidad de funcionalidad adicional 
+     con un mínimo esfuerzo. Esto incluye:</p>   
+
+     <ul>
+        <li>Interfaces de Programación de Aplicaciones del Navegador ( APIs ) — APIs construidas dentro de los navegadores que ofrecen funcionalidades como crear dinámicamente contenido HTML y establecer estilos CSS, hasta capturar y manipular un vídeo desde la cámara web del usuario, o generar gráficos 3D y muestras de sonido.</li>
+        <li>APIs de terceros, que permiten a los desarrolladores incorporar funcionalidades en sus sitios de otros proveedores de contenidos como Twitter o Facebook.</li>
+        <li>Marcos de trabajo y librerías de terceros que puedes aplicar a tu HTML para que puedas construir y publicar rápidamente sitios y aplicaciones.</li>
+     </ul>
+
+   <h3>VARIABLES</h3>  
+   <P>Las Variables son contenedores en los que puedes almacenar valores. Primero debes declarar la variable con la palabra clave var(menos recomendado) o let, seguida del nombre que le quieras dar. Se recomienda más el uso de letque de var</P>
+   <ul>
+     <li><strong>CADENA:</strong>Esto es una secuencia de texto conocida como cadena. Para indicar que la variable es una cadena, debes escribirlo entre comillas. <br> let miVariable = 'Bob';	</li>
+     <li><strong>NUMERO:</strong>Esto es un número. Los números no tienen comillas.<br> let miVariable = 10;</li>
+     <li><strong>BOOLEANO:</strong>Tienen valor verdadero/falso. true/ falseson palabras especiales en JS, y no necesitan comillas.<BR>let miVariable = true;</li>
+     <li><strong>FORMACIÓN:</strong>Una estructura que te permite almacenar varios valores en una sola referencia.<br> let miVariable = [1,'Bob','Steve',10]; Llama a cada miembro del array así: miVariable[0], miVariable[1], etc.</li>
+     <li><strong>OBJETO:</strong>Básicamente cualquier cosa. Todo en JavaScript es un objeto y puede ser almacenado en una variable. Mantén esto en mente mientras aprendes.<br>let miVariable = document.querySelector('h1'); Todos los ejemplos anteriores también.</li>   
+   </ul>
+   <p> Las variables son necesarias para hacer cualquier cosa interesante en programación. Si los valores no pudieran cambiar, entonces no podrías hacer nada dinámico, como personalizar un mensaje de bienvenida de un usuario que visita tu página, cambiar la imagen que se muestra en una galería de imágenes, etc.</p>
+    
+   <h3>COMENTARIOS</h3>
+   <p>Puedes escribir comentarios entre el código JavaScript, igual que puedes en CSS. El navegador ignora el texto marcado como comentario. En JavaScript, los comentarios de una sola línea se escriben así:
+    <br> <strong>// Esto es un comentario</strong> Pero también puedes escribir comentarios en más de una línea, igual que en CSS:
+    <br> <strong>/*
+        Esto es un comentario
+        de varias líneas.
+        */
+        </strong>
+   </p>
+
+   <h3>OPERADORES</h3>
+   <p>Un operador es básicamente un símbolo matemático que puede actuar sobre dos valores (o variables) y producir un resultado. En la lista de abajo aparecen los operadores más simples, con algunos ejemplos para probarlos en la consola del navegador.</p>
+   <ul>
+     <li><strong>suma/concatena:</strong>Se usa para sumar dos números, o juntar dos cadenas en una. <br>6 + 9;
+        "Hola " + "mundo!";</li>
+     <li><strong>Resta, multiplicación, división:</strong>Estos hacen lo que esperarías que hicieran en las matemáticas básicas.<br>9 - 3;
+        8 * 2; // La multiplicación en JS es un asterisco
+        9 / 3;</li>   
+     <li><strong>Operador de asignación</strong>Los has visto anteriormente: asigna un valor a una variable.<br>let miVariable = 'Bob';</li>
+     <li><strong>identidad/igualdad:</strong>Comprueba si dos valores son iguales entre sí, y devuelve un valor de true/ false(booleano).<br>let miVariable = 3;
+        miVariable === 4;</li>   
+     <li><strong>Negación, distinto (no igual):</strong>En ocasiones utilizado con el operador de identidad, la negación es en JS el equivalente al operador lógico NOT — cambia truepor falsey viceversa.<br><br>La expresión básica es true, pero la comparación devuelve falseporque lo hemos negado:
+
+        let miVariable = 3;
+        !miVariable === 3;
+        
+       <br> Aquí estamos comprobando " miVariableNO es igual a 3". Esto devuelve false, porque miVariableES igual a 3.
+        
+        let miVariable = 3;
+        miVariable !== 3;</li>
+   </ul>
+
+   <h3>CONDICIONALES</h3>
+   <p>Las condicionales son estructuras de código que permiten comprobar si una expresión devuelve verdadera o no, y después ejecuta un código diferente dependiendo del resultado. La forma de condicional más común es la llamada if... else. Entonces, por ejemplo:<br><br>
+    let helado = "chocolate"; <br>
+    if (helado === "chocolate") { <br>
+     alert("¡Sí, amo el helado de chocolate!"); <br>
+    } else { <br>
+      alert("Awwww, pero mi favorito es el de chocolate...");<br>
+    } <br><br>
+    La expresión dentro de if (... )es el criterio — este usa al operador de identidad (descrito arriba) para comparar la variable heladocon la cadena chocolatepara ver si las dos son iguales. Si esta comparación devuelve true, se ejecuta el primer bloque de código. Si no, ese código se omite y se ejecuta el segundo bloque de código después de la declaración else.
+    </p>
+
+    <h3>FUNCIONES</h3>
+    <p>Las funciones son una manera de encapsular una funcionalidad que quieres reutilizar, de manera que puedes llamar esa función con un solo nombre, y no tendrás que escribir el código entero cada vez que la utilices. Ya has visto algunas funciones más arriba, por ejemplo: <br><br>
+        let nombreDeLaVariable = document.querySelector("h1");
+    </p>
+
+    <h3>EVENTOS</h3>
+    <P>Para crear una interacción real en tu sitio web, debes usar eventos. Estos son unas estructuras de código que captan lo que sucede en el navegador, y permite que en respuesta a las acciones que suceden se ejecute un código. El ejemplo más obvio es un clic ( click event ), que se activa al hacer clic sobre algo. Para demostrar esto, prueba ingresando lo siguiente en tu consola, luego da clic sobre la página actual:</P><br>
+    document.querySelector("html").onclick = function () { <br>
+        alert("¡Ouch! ¡Deja de pincharme!"); <br>
+      };
+      
+
+</body>
+</html>
