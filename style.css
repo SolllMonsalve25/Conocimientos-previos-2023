@@ -1,36 +1,4 @@
-/* GENERAL */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
-#projects {
-    position: relative;
-}
-
-.color-container {
-    border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
-}
-
-.Html {
-    border-radius: 2rem;
-    width: 90%;
-    height: 90%;
-}
-
-.project.title {
-    margin: 1rem;
-    color: black;
-}
-
-.project-btn {
-    color: black;
-    border-color: rgb(163, 163, 163);
-}
-
-footer {
-    height: 26vh;
-    margin: 0 1rem;
-}
-
-footer p {
+h1{
     text-align: center;
-}
+    color: blueviolet;
+} 
