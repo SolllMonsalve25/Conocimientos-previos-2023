@@ -1,0 +1,46 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(147, 9%, 19%);
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del encabezado */
+h3 {
+    color: #2ab7e2;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilos del contenido */
+p {
+    color: #f1eeee;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    color: antiquewhite;
+    line-height: 1.5;
+}
+
+strong {
+    color: #b3fd07;
+}
+
+a {
+    color:  #f5f10e;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+

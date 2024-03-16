@@ -1,0 +1,71 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(131, 130, 138);
+    margin: 0;
+    padding: 0;
+} 
+
+/* Estilos del encabezado */
+header {
+    background-color: #3f3838;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos de los enlaces */
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #666;
+}
+
+/* Estilos del contenedor principal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos de la sección de contenido */
+section {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+ 
+a {
+    color: #007bff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: hsl(352, 68%, 30%);
+}
+h3 {
+    text-align: center;
+    color: rgb(178, 165, 184);
+    background-color: #333;
+}
+
+strong {
+    color: rgb(48, 21, 121);
+}
